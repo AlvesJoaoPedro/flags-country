@@ -1,0 +1,51 @@
+/* Centraliza o contêiner na tela */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0; /* Cor de fundo da página */
+}
+
+/* O contêiner que contém as bandeiras */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Linha para exibir as bandeiras */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Alinha as bandeiras no centro */
+}
+
+/* Estilo das bandeiras */
+.flag {
+  min-height: 6.5rem;
+  width: 120px; /* Largura das bandeiras */
+  margin: 10px;
+  text-align: center;
+}
+
+.flag img {
+  width: 100%; /* Faz com que as imagens ocupem a largura da div */
+  max-height: 80px; /* Limita a altura das imagens */
+  object-fit: contain; /* Ajusta o conteúdo da imagem sem distorção */
+}
+
+.flag p {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 5px;
+}
